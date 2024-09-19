@@ -18,8 +18,6 @@
 #define TRANSFORM_H_
 
 #include <math.h>
-#include <vector>
-#include <algorithm>
 #include "../include/lipkg.h"
 
 enum class LDVersion
@@ -38,7 +36,7 @@ private:
   double offset_y;
 
 public:
-  explicit SlTransform(LDVersion version, bool to_right_hand = false);
+  explicit SlTransform(LDVersion version);
   Points2D Transform(const Points2D & data);
   ~SlTransform();
 };

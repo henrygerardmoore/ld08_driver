@@ -19,7 +19,6 @@
 #include <stdint.h>
 #include <vector>
 #include <array>
-#include <iostream>
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include "../include/pointdata.h"

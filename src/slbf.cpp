@@ -15,7 +15,6 @@
 // Author: LD Robot, Will Son
 
 #include <math.h>
-#include <iostream>
 #include <algorithm>
 #include "../include/lipkg.h"
 #include "../include/slbf.h"

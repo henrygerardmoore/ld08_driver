@@ -18,7 +18,6 @@
 #define SLBF_H_
 
 #include <stdint.h>
-#include <vector>
 #include "../include/pointdata.h"
 
 class Slbf

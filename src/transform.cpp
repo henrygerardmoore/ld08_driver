@@ -15,7 +15,6 @@
 // Author: LD Robot, Will Son
 
 #include "../include/transform.h"
-#include <iostream>
 
 /*!
   \brief     transfer the origin to the center of lidar circle
@@ -27,7 +26,7 @@
   \param[out]  data
   \retval      Data after coordinate conversion
 */
-SlTransform::SlTransform(LDVersion version, bool to_right_hand)
+SlTransform::SlTransform(LDVersion version)
 {
   switch (version) {
     case LDVersion::LD_ZERO:

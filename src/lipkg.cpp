@@ -127,7 +127,7 @@ bool LiPkg::Parse(const uint8_t * data, int32_t len)
         mTimestamp = pkg->timestamp;
         uint32_t diff =
           ((uint32_t)pkg->end_angle + 36000 - (uint32_t)pkg->start_angle) % 36000;
-        float step = diff / (POINT_PER_PACK - 1) / 100.0;
+        float step = static_cast<float>(diff) / (static_cast<double>(POINT_PER_PACK) - 1.) / 100.0;
         float start = static_cast<double>(pkg->start_angle) / 100.0;
         float end = static_cast<double>(pkg->end_angle % 36000) / 100.0;
         PointData data;
